@@ -1,0 +1,9 @@
+services:
+    promotions:
+        build: .
+        container_name: promotions_php
+        command: php -S 0.0.0.0:80 -t /var/www/html/public
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - '8000:80'

@@ -1,0 +1,3 @@
+services:
+  App\Adapter\FileReader:
+    class: App\Tests\DependencyInjection\FileReaderFake
